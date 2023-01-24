@@ -1,0 +1,103 @@
+.formContainer {
+  width: 35vw;
+  min-height: 43vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 9px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40vw;
+  min-height: 35vh;
+}
+
+.input {
+  width: 30vw;
+  height: 3.5vh;
+  padding: 0.5rem;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+.submittedInput {
+  width: 30vw;
+  height: 3.5vh;
+  padding: 0.5rem;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  background-image: url("/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: 28vw;
+}
+
+.submitButton {
+  width: 32vw;
+  height: 4vh;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  border: 0.5px solid green;
+  cursor: pointer;
+  padding: 1vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px 2px rgb(165, 236, 190);
+  margin-bottom: 40px;
+}
+
+.submitButton:hover {
+  background-color: green;
+}
+
+.footer {
+  margin: 0px 15px;
+  font-size: 14px;
+  text-align: center;
+  color: grey;
+}
+.footer strong {
+  color: #f15050;
+}
+.footer a {
+  text-decoration: none;
+}
+
+.errorMessage {
+  color: rgb(237, 90, 90);
+  font-size: 13px;
+  justify-content: right;
+  align-items: center;
+  text-align: right;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+  .formContainer {
+    width: 70vw;
+    min-height: 50vh;
+    margin: 30px;
+  }
+  .input {
+    width: 60vw;
+  }
+  .submitButton {
+    width: 60vw;
+    height: 50px;
+  }
+  .footer {
+    font-size: 0.7rem;
+  }
+}
